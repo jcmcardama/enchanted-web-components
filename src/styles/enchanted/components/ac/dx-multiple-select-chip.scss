@@ -104,6 +104,7 @@
     @include typography.body2italic;
     height: 24px;
     letter-spacing: 0.35px;
+    background-color: transparent;
   }
 
   &::part(clear-icon) svg:hover path {
@@ -199,7 +200,7 @@
   }
 
   &::part(button-contained) {
-    background-color: palette.clr(light, background, paper) !important;
+    // background-color: palette.clr(light, background, paper) !important;
     border: none !important;
     display: flex;
     align-items: center;
