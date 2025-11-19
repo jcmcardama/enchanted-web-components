@@ -1,6 +1,7 @@
 # Changelog
 
 ## Unreleased
+- Fixed the badge icon position for the rtl.
 
 ### Added
 
