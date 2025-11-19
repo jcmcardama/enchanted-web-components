@@ -7,6 +7,8 @@
 - Added `aria-modal="true"` attribute to dialog role in `dx-dialog` component
 - Added keyboard navigation tests for `dx-dialog` close button (Enter and Space keys)
 - Added ARIA accessibility tests for `dx-preview` and `dx-dialog` components
+- Added `focusOnLoadingContainer()` public method in `dx-data-grid-generic` component
+- Added `focusDialog()` public method in `dx-dialog` component
 
 ### Fixed
 - Fixed screen reader accessibility in `dx-preview` component by adding proper ARIA labels, roles, and attributes
@@ -18,6 +20,12 @@
 ### Changed
 - Changed `dx-preview` backdrop to use `role="presentation"` for better screen reader experience
 - Changed `dx-preview` container to use proper dialog role with ARIA attributes
+- Updated `dx-data-grid-generic` component with improved ARIA attributes:
+  - Changed table `role` from "table" to "grid" for better screen reader support
+  - Changed cell `role` from "cell" to "gridcell" to match grid semantics
+  - Added `aria-colcount`, `aria-rowcount`, and `aria-busy` attributes to table element
+  - Added `role="status"` and `aria-label` to loading container
+  - Wrapped table header and body in `<thead>` and `<tbody>` elements for better semantic structure
 
 ### Breaking changes
 
