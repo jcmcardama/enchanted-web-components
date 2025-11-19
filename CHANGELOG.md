@@ -5,6 +5,7 @@
 ### Added
 
 ### Fixed
+- Improved accessibility of `dx-breadcrumbs` component for screen readers
 
 ### Changed
 
