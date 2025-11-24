@@ -7,6 +7,7 @@
 ### Fixed
 - Refactored `dx-dialog` component to use reactive state properties (`@state()`) for ARIA attributes instead of direct DOM manipulation, improving maintainability and alignment with Lit's reactive programming model
 - Fixed `dx-dialog` test for auto-focus behavior to properly check dialog element focus state
+- Fixed `dx-breadcrumbs` component list styling by adding `list-style-type: none` to ensure proper rendering
 
 ### Changed
 - Changed `dx-dialog` accessibility implementation to use Lit reactive state for `role`, `aria-label`, `tabindex`, and content visibility management
