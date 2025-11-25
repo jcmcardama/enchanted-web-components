@@ -51,7 +51,10 @@ export class DxAvatar extends DxAcBaseElement {
 
   private renderAvatar(src: TemplateResult | string | undefined, part: AVATAR_PARTS) {
     if (typeof src === 'string') {
-      return html`<img data-testid="dx-avatar-img" src="${src}" part=${this.getPartAttribute(part)} alt="${part}" />`;
+      if (src.length > 0) {
+        return html`<img data-testid="dx-avatar-img" src="${src}" part=${this.getPartAttribute(part)} alt="${part}" />`;
+      }
+      return nothing;
     }
     return html`<span data-testid="dx-avatar-icon-template" part=${this.getPartAttribute(part)}>${src}</span>`;
   }

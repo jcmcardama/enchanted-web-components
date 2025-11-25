@@ -53,22 +53,18 @@ const meta: Meta = {
     imgUrl: {
       control: 'text',
       description: 'Image URL',
-      defaultValue: testAvatarImageUrl,
     },
     iconUrl: {
       control: 'object',
       description: 'Icon URL',
-      defaultValue: html`<icon-link></icon-link>`,
     },
     avatarText: {
       control: 'text',
       description: 'Avatar text',
-      defaultValue: 'AB',
     },
     iconTemplate: {
       control: 'object',
       description: 'Icon template (SVG string)',
-      defaultValue: html`<icon-template></icon-template>`,
     },
   },
   args: {
