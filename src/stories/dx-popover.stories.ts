@@ -76,7 +76,7 @@ const meta: Meta = {
   },
 
   args: {
-    open: true,
+    open: false,
     label: 'Popover Title',
     text: 'This is a sample popover description.',
     showLabel: true,
@@ -85,7 +85,7 @@ const meta: Meta = {
     inverse: true,
     arrow: '3:00',
     withpadding: true,
-    disableHover: true,
+    disableHover: false,
     buttontext: 'Hover on Me',
   },
 
