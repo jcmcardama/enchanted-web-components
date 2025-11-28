@@ -17,7 +17,7 @@ import '@hcl-software/enchanted-icons-web-component/dist/carbon/es/close';
 
 //helper import
 import { DxAcBaseElement } from "./dx-ac-base-element";
-import { AUTO_SHOW_POPOVER_KEY, LOCALE_DIRECTIONS } from '../constants.js';
+import { LOCALE_DIRECTIONS } from '../constants.js';
 import { getCurrentDirection } from '../localization.js';
 import  { DxPopoverArrowPosition } from '../../types/dx-popover.js';
 import { POPOVER_PARTS } from "../../types/cssClassEnums";
@@ -44,22 +44,7 @@ export class DxPopover extends DxAcBaseElement {
 
   @property({ type: Boolean }) withpadding = false;
 
-  @property({ type: Boolean }) autoShowOnLoad = false;
-
   @property({ type: Boolean }) disableHover = false;
-
-  connectedCallback() {
-    super.connectedCallback();
-
-    if (this.autoShowOnLoad) {
-      const hasShown = sessionStorage.getItem(AUTO_SHOW_POPOVER_KEY);
-
-      if (!hasShown) {
-        this.open = true;
-        sessionStorage.setItem(AUTO_SHOW_POPOVER_KEY, 'true');
-      }
-    }
-  }
 
   // Used getter to make sure if the direction changes should update
   private get isLTR(): boolean {
