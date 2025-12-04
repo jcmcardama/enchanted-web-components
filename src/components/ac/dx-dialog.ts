@@ -127,8 +127,8 @@ export class DxDialog extends DxAcBaseElement {
         }
       }
       // Check renderRoot if shadowRoot doesn't exist (for Lit components)
-      else if ('renderRoot' in currentElement && (currentElement as any).renderRoot) {
-        const renderRootFocusable = (currentElement as any).renderRoot.querySelector(DxDialog.FOCUSABLE_SELECTOR) as HTMLElement;
+      else if ('renderRoot' in currentElement && (currentElement as unknown as { renderRoot: ShadowRoot }).renderRoot) {
+        const renderRootFocusable = (currentElement as unknown as { renderRoot: ShadowRoot }).renderRoot.querySelector(DxDialog.FOCUSABLE_SELECTOR) as HTMLElement;
         if (renderRootFocusable) {
           currentElement = renderRootFocusable;
           foundFocusable = renderRootFocusable;

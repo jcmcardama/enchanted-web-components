@@ -353,7 +353,7 @@ describe('DxDialog component testing', () => {
       );
       await browser.pause(150);
       const component = await document.querySelector('dx-dialog') as DxDialog;
-      const inputField = component?.querySelector('dx-input-textfield') as any;
+      const inputField = component?.querySelector('dx-input-textfield') as HTMLElement | null;
       const shadowInput = inputField?.shadowRoot?.querySelector('input') as HTMLElement;
 
       // Shadow DOM input should receive focus (recursive search through nested components)
