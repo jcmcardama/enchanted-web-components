@@ -4,11 +4,16 @@
 
 ### Added
 - Added new `placement` and `size` property for `dx-menu` component.
+- Added comprehensive accessibility focus tests for `dx-dialog` component.
 
 ### Fixed
+- Fixed `dx-dialog` focus management by simplifying focus sequence and improving accessibility for slotted content.
+- Fixed `dx-dialog` to properly handle focus on nested web components with shadow DOM.
 
 ### Changed
 - Refactored menu placement logic using a switch statement for clarity and maintainability.
+- Refactored `dx-dialog` focus management to remove reactive state properties and simplify accessibility implementation.
+- Simplified `dx-dialog` focus announcement sequence for better performance and cleaner code.
 
 ### Breaking changes
 
