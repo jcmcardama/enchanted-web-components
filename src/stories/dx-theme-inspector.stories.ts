@@ -25,7 +25,8 @@ const meta: Meta = {
     docs: {
       description: {
         component:
-          'A utility component that displays all color palettes and theme values from the Enchanted design system. Use this to inspect available colors, shades, and theme tokens for both light and dark modes.'
+          `A utility component that displays all color palettes and theme values from the Enchanted design system. 
+            Use this to inspect available colors, shades, and theme tokens for both light and dark modes.`
       },
     },
   },
@@ -48,7 +49,8 @@ export const ColorInspector: Story = {
     docs: {
       description: {
         story:
-          'This inspector displays all available color palettes (including BLUE, GREEN, RED, ORANGE, etc.) with their various shades, as well as theme tokens for light and dark modes. Use this as a reference when styling components or selecting colors.',
+          `This inspector displays all available color palettes (including BLUE, GREEN, RED, ORANGE, etc.) with their various shades,
+            as well as theme tokens for light and dark modes. Use this as a reference when styling components or selecting colors.`,
       },
     },
   },
