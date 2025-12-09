@@ -16,6 +16,7 @@
 - Updated `dx-input-textfield` storybook to use enchanted-icons (`icon-close`, `icon-search`) from `@hcl-software/enchanted-icons-web-component`.
 
 ### Breaking changes
+- Removed `clearIconUrl` and `actionIconUrl` properties from `dx-input-textfield` component. Use `clearIcon` and `actionIcon` properties instead, which accept TemplateResult for enchanted-icons rendering.
 
 ## 1.4.0
 
