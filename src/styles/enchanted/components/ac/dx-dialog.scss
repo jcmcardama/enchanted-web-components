@@ -152,9 +152,12 @@
   }
 
   &::part(title-text),
-    &::part(title-text-rtl) {
+  &::part(title-text-rtl) {
     @include typography.subtitle1;
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &::part(title-root),
